@@ -13,17 +13,33 @@ module.exports = {
 
     },
     colors:{
-       bag:'#800080',
-       
-       text:'#FFFFFF',
+       backgro:'#F9F6E6',
+      // bag:'#800080',
+       bag:'#000000',
+       text:'#FFD700',
+       //text:'#FFFFFF',
        
        bagc:'#CBC3E3',
-       liv:'#CF9FFF',
+       //liv:'#CF9FFF',
+       liv:'#454545',
       
        black:'#000000',
+       whitee:'#fff'
     },
-    
+    keyframes: {
+      bounceCircle: {
+        '0%, 100%': { borderRadius: '50%' },
+        '50%': { borderRadius: '40%' },
+      },
+    },
+    animation: {
+      bounceCircle: 'bounceCircle 2s infinite',
+    },
+    animation1: {
+      typingOnce: 'typing 3s steps(8) forwards',
+    }
   },
   plugins: [],
+  
 }
 

@@ -1,41 +1,60 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandhana |Portfolio</title>
-    
     <link href="./output.css" rel="stylesheet">
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
 </head>
 
-<body class="font-fonts bg-liv overflow-x-hidden">
-    <header class="md:fixed top-0 w-full left-0 z-50">
-        <div class="container1 bg-gradient-to-br from-bag to-bagc backdrop:filter  p-4 text-center items-center ">
-            <div class="container flex mx-auto  justify-between text-center items-center">
+<body class="bg-liv mx-auto">
 
-                <div class="inline-flex">
-                    <img height="60px" width="60px" src="../asserts/images-removebg-preview (1).png" alt="">
+    <div class="bg-bag shadow-xl   text-text align-middle p-5 top-0 left-0 fixed w-full">
+
+
+        <div class="container mx-auto  ">
+            <div class="flex  justify-between">
+                <img src="../asserts/anaprofile-removebg-preview.png" height="50px" width="50px" alt="">
+                <div class="ul md:w-2/4 justify-between">
+                    <ul class="md:flex hidden   text-center justify-between md:w-full  ">
+                        <li><a class="md:text-xl  hover:text-whitee " href="index.html">Home</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="skills.html">Skills</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="intern1.html">internship</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="projects.html">projects</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="certifications.html">Certifications</a></li>
+
+                    </ul>
                 </div>
-                <ul class="links flex md:flex-row flex-col md:w-2/4  w-full justify-between text-text text-lg ">
-                    <li class="hover:bg-liv hover:transition-opacity"><a href="#home">Home</a></li>
-                    <li class="hover:bg-liv"><a href="#skills">Skills</a></li>
-                    <li class="hover:bg-liv"><a href="#Cer">Certifications</a></li>
-                    <li class="hover:bg-liv"><a href="intern.html">Interships</a></li>
-                    <li class="hover:bg-liv"><a href="">Contact</a></li>
-
-                </ul>
+                
+                <div onclick="burgeron()" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="#fff" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z" />
+                    </svg>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
+    </div>
+    <div class="sidenav -left-96 bg-bag z-50 top-0 w-1/2 h-full   md:hidden  fixed transition-all duration-500">
+        <div onclick="burgeroff()">
+            <p class="mt-2 ml-44"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path fill="#fff"
+                        d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z" />
+                </svg></p>
+        </div>
+        <div class="nav-links  text-center  list-none">
+            <p class="mb-32 "><a class="text-2xl  text-text  hover:text-black " href="#">Home</a></p>
+            <p class="mb-32"><a class="text-2xl text-text hover:text-black " href="collection.html">Collection</a></p>
+            <p class="mb-32"><a class="text-2xl text-text hover:text-black" href="index.html">Fishes</a></p>
+
+        </div>
+    </div>
+
 
    
    <!-- Main section -->  
@@ -43,23 +62,22 @@
     
 
     
-    <section id="home mx-auto">
+    <section id="home "class="mx-auto">
         
             <div class="flex mx-auto  md:flex-row flex-col  justify-between  md:w-3/4 md:mt-36 mt-20 text-center items-center ">
                 <div class=" container md:mx-auto justify-center md:w-1/2 w-3/4">
-                    <img class="md:h-96 h-11/12  rounded-full md:w-3/4 w-11/12 ml-4 md:m-5 md:mt--15 border-4 border-dotted border-bag rounded-2xl shadow-2xl "
-                        src="../asserts/anaprofile.jpg" alt="">
+                    <img class="md:h-96 h-11/12  rounded-full md:w-3/4 w-11/12 ml-4 md:m-5 md:mt--15 border-4 border-dashed  animate-bounceCircle border-text rounded-2xl shadow-2xl "
+                        src="../asserts/anaprofile-removebg-preview.png" alt="">
                     </div>
                     <div class="w-1/2">
-                    <h1 id="animatedName"
-                        class="md:text-6xl text-4xl font-bold text-stroke text-stroke-2 text-bag mt-2"></h1>
+                    <h1 class="md:text-6xl text-4xl font-bold text-stroke text-stroke-2 text-text mt-2 animation1">Nandhana</h1>
                     <h1 class="md:text-3xl text-xl font-extra  text-text p-6  ">Web developer |Web designer</h1>
                 </div>
             </div>
             
             <div class="container p-4 w-11/12 mx-auto md:mt-4 mt-2">
-                <h1 class=" text-center text-bag text-4xl font-bold  p-2 md:p-10 ">--About me--</h1>
-                <p class="leading-8 text-xl  text-bag ">As a B.Tech student at Panimalar Engineering College, I’m deeply
+                <h1 class=" text-center text-text text-4xl font-bold  p-2 md:p-10 ">--About me--</h1>
+                <p class="leading-8 text-xl  text-whitee ">As a B.Tech student at Panimalar Engineering College, I’m deeply
                     immersed in the world of web development and design. My journey so far has included hands-on
                     experience through internships and personal projects, with my latest endeavor being an portfolio
                     website where I’ve been able to blend my skills in both front-end and back-end development.</p>
@@ -74,458 +92,11 @@
 
    
     
-    <section id="#skills mx-auto w-11/12">
-        <h1 class="text-center text-bag mt-10 mb-10 text-3xl">--My skills--</h1>
-        <div class="main ">
-            <div class="container mx-auto md:flex ">
+  
 
-                <div class="container md:w-1/2 mx-auto md:p-0 pl-4 pr-4  ">
-                    <h1 class="text-center text-2xl text-text">--Technical skills--</h1>
 
 
 
-
-                    <div>
-                        <h1 class="text-text  pb-3 text-xl">HTML - 95%</h1>
-                        <div class="bg-text h-3 w-full">
-
-                            <div class="bg-bag h-3 w-11/12"></div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div>
-                        <h1 class="text-text pt-3 pb-3 text-xl">CSS - 80%</h1>
-                        <div class="bg-text h-3 w-full ">
-
-                            <div class="bg-bag h-3 w-10/12"></div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <h1 class="text-text pt-3 pb-3 text-xl">Tailwind css - 60%</h1>
-                        <div class="bg-text h-3 w-full ">
-
-                            <div class="bg-bag h-3 w-7/12"></div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h1 class="text-text  pt-3 pb-3 text-xl">Java Script - 60%</h1>
-                        <div class="bg-text h-3 w-full ">
-
-                            <div class="bg-bag h-3 w-7/12"></div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <h1 class="text-text pt-3 pb-3 text-xl">figma -75%(ui/ux)</h1>
-                        <div class="bg-text h-3 w-full ">
-
-                            <div class="bg-bag h-3 w-9/12"></div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <h1 class="text-text pt-3 pb-3 text-xl">Core java - 70%</h1>
-                        <div class="bg-text h-3 w-full ">
-
-                            <div class="bg-bag h-3 w-9/12"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Certificatios -->
-    <section id="Certificate" class=" w-11/12  md:p-10 mx-auto">
-        <div class="container mx-auto">
-            <div class="text-center">
-                <h1 class="text-3xl font-bold text-bag mt-9 ">-- Certifications --</h1>
-            </div>
-            <div class="container grid md:grid-cols-3 grid-cols-1 gap-3 content-center mt-11">
-
-                <div
-                    class=" text-center justify-center bg-black m-4 text-bag  border-4 rounded-xl border-bag  hover:shadow-2xl sm:mx-7">
-                    <img a class=" h-80 w-full object-cover" src="../asserts/Ieee.jpg" alt="">
-                    <h1 class="text-2xl ">IEEE-EXTREME</h1>
-                </div>
-
-                <div
-                    class=" text-center justify-center bg-black m-4 text-bag  border-4 rounded-xl border-bag hover:shadow-2xl sm:mx-7">
-                    <img a class="h-80  w-full object-cover" src="../asserts/infosys.png" alt="">
-                    <h1 class="text-2xl ">Infosys Ideathon</h1>
-                </div>
-
-
-
-                <div
-                    class=" text-center justify-center bg-black m-4 text-bag border-4 rounded-xl border-bag hover:shadow-2xl sm:mx-7">
-                    <img a class="h-80 w-full object-cover  " src="../asserts/tcsion.png" alt="">
-                    <h1 class="text-2xl">TCS-ion</h1>
-                </div>
-
-                <div
-                class=" text-center justify-center bg-black m-4 text-bag  border-4 rounded-xl border-bag hover:shadow-2xl sm:mx-7">
-                <img a class="h-80 w-full object-cover  " src="../asserts/tcsion.png" alt="">
-                <h1 class="text-2xl">TCS-ion</h1>
-            </div>
-
-            <div
-            class=" text-center justify-center bg-black m-4 text-ba border-4 rounded-xl border-bag hover:shadow-2xl sm:mx-7">
-            <img a class="h-80 w-full object-cover  " src="../asserts/tcsion.png" alt="">
-            <h1 class="text-2xl">TCS-ion</h1>
-           </div>
-
-           <div
-           class=" text-center justify-center bg-black m-4 text-bag  border-4 rounded-xl border-bag hover:shadow-2xl sm:mx-7">
-           <img a class="h-80 w-full object-cover  " src="../asserts/tcsion.png" alt="">
-           <h1 class="text-2xl">TCS-ion</h1>
-       </div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="#projects" class=" mx-auto w-11/12 md:p-10 "><!-- Projects -->
-        <h1 class="mx-auto text-bag text-3xl text-center font-bold p-10">-- My projects --</h1>
-        <div class="container grid md:grid-cols-3 grid-cols-1 mx-auto text-text  ">
-            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
-                <div>
-                    <img class="h-80 w-full object-cover" src="../asserts/calculator.jpeg" width="content-center"
-                        alt="">
-                </div>
-                <div>
-                    <h1>Tech Stacks</h1>
-                    <ul>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Html</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Css</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Java Script</li>
-                        </div>
-
-                    </ul>
-
-
-                    <div class="items-center flex justify-center m-5 ">
-                        <div class="mr-4">
-                            <h1>Live output</h1>
-                        </div>
-                        <div>
-                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                    <path fill="#fff"
-                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
-                                        stroke-width="1.7" stroke="#fff" />
-                                </svg></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
-                <div>
-                    <img class="h-80 w-full object-cover" src="../asserts/Landing.jpeg" width="content-center" alt="">
-                </div>
-                <div>
-                    <h1>Tech Stacks</h1>
-                    <ul>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Html</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Css</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Java Script</li>
-                        </div>
-
-                    </ul>
-
-
-                    <div class="items-center flex justify-center m-5 ">
-                        <div class="mr-4">
-                            <h1>Live output</h1>
-                        </div>
-                        <div>
-                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                    <path fill="#fff"
-                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
-                                        stroke-width="1.7" stroke="#fff" />
-                                </svg></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
-                <div>
-                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
-                        width="content-center" alt="">
-                </div>
-                <div>
-                    <h1>Tech Stacks</h1>
-                    <ul>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Html</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Css</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Java Script</li>
-                        </div>
-
-                    </ul>
-
-
-                    <div class="items-center flex justify-center m-5 ">
-                        <div class="mr-4">
-                            <h1>Live output</h1>
-                        </div>
-                        <div>
-                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                    <path fill="#fff"
-                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
-                                        stroke-width="1.7" stroke="#fff" />
-                                </svg></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class=" bg-bag m-5 hover:shadow-blue-2xl hover:scale-105 duration-300  border rounded-xl">
-                <div>
-                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
-                        width="content-center" alt="">
-                </div>
-                <div>
-                    <h1>Tech Stacks</h1>
-                    <ul>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Html</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Css</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Java Script</li>
-                        </div>
-
-                    </ul>
-                    <div class="items-center flex justify-center m-5 ">
-                        <div class="mr-4">
-                            <h1>Live output</h1>
-                        </div>
-                        <div>
-                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                    <path fill="#fff"
-                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
-                                        stroke-width="1.7" stroke="#fff" />
-                                </svg></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
-                <div>
-                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
-                        width="content-center" alt="">
-                </div>
-                <div>
-                    <h1>Tech Stacks</h1>
-                    <ul>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Html</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Css</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Java Script</li>
-                        </div>
-
-                    </ul>
-                    <div class="items-center flex justify-center m-5 ">
-                        <div class="mr-4">
-                            <h1>Live output</h1>
-                        </div>
-                        <div>
-                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                    <path fill="#fff"
-                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
-                                        stroke-width="1.7" stroke="#fff" />
-                                </svg></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            
-               
-            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300 border rounded-xl">
-                <div>
-                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
-                        width="content-center" alt="">
-                </div>
-                <div>
-                    <h1>Tech Stacks</h1>
-                    <ul>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Html</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Css</li>
-                        </div>
-                        <div class="flex m-2 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
-                                <path fill="#fff"
-                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
-                                    stroke-width="1.7" stroke="#fff" />
-                            </svg>
-                            <li>Java Script</li>
-                        </div>
-
-                    </ul>
-                    <div class="items-center flex justify-center m-5 ">
-                        <div class="mr-4">
-                            <h1>Live output</h1>
-                        </div>
-                        <div>
-                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                    <path fill="#fff"
-                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
-                                        stroke-width="1.7" stroke="#fff" />
-                                </svg></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        </div>
-    </section>
 
 
 
@@ -546,7 +117,7 @@
     <!-- contact -->
 
     <section id="contact mx-auto">
-        <h1 class="text-3xl font-bold text-bag text-center p-10">--Contact me--</h1>
+        <h1 class="text-3xl font-bold text-text text-center p-10">--Contact me--</h1>
         <div class="">
             <div class="container mx-auto md:w-1/2 w-11/12 text-start  items-center p-4">
                 <form action="">
@@ -653,6 +224,21 @@
 </body>
 
 <script>
+
+        var sidenav = document.querySelector(".sidenav")
+
+        function burgeron() {
+            sidenav.style.left = "0"
+
+        }
+        function burgeroff() {
+            sidenav.style.left = "-96%"
+        }
+    
+
+
+
+
     const name = "Nandhana S";
     const container = document.getElementById("animatedName");
 

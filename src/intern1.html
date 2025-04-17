@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-liv mx-auto mt-20">
+
+    <div class="bg-bag shadow-xl z-50   text-text align-middle p-5 top-0 left-0 fixed w-full">
+
+
+        <div class="container mx-auto  ">
+            <div class="flex  justify-between">
+                <img src="../asserts/anaprofile.jpg" height="50px" width="50px" alt="">
+                <div class="ul md:w-2/4 justify-between">
+                    <ul class="md:flex hidden   text-center justify-between md:w-full  ">
+                        <li><a class="md:text-xl  hover:text-whitee " href="index.html">Home</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="skills.html">Skills</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="intern1.html">internship</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="projects.html">projects</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="certifications.html">Certifications</a></li>
+
+                    </ul>
+                </div>
+                
+                
+                <div onclick="burgeron()" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="#fff" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="sidenav -left-96 bg-bag z-50 top-0 w-1/2 h-full   md:hidden  fixed transition-all duration-500">
+        <div onclick="burgeroff()">
+            <p class="mt-2 ml-44"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path fill="#fff"
+                        d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z" />
+                </svg></p>
+        </div>
+        <div class="nav-links  text-center  list-none">
+            <p class="mb-32 "><a class="text-2xl  text-text  hover:text-black " href="#">Home</a></p>
+            <p class="mb-32"><a class="text-2xl text-text hover:text-black " href="collection.html">Collection</a></p>
+            <p class="mb-32"><a class="text-2xl text-text hover:text-black" href="index.html">Fishes</a></p>
+
+        </div>
+    </div>
+    <div class="container relative md:h-96 h-40 w-full mx-auto text-center  ">   
+        <div class="absolute    top-1/2 left-1/2 transform  -translate-x-1/2 -translate-y-1/2">
+        <h1 class= " animate__animated animate__bounceInLeft trans md:text-6xl text-3xl text-text font-bold align-middle md:mt-28 ">My interShips</h1>
+         <p></p>
+        </div>
+     </div>
+
+
+
+     <div>
+        <div class="max-w-4xl mx-auto p-6">
+            <h2 class="text-3xl font-bold mb-8 text-center text-text">My Internship Timeline</h2>
+          
+            <div class="relative border-l border-gray-300">
+              <!-- Timeline Item 1 -->
+              <div class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-1.5 border border-white"></div>
+                <p class="text-sm ">Jan 2024</p>
+                <h3 class="text-xl  text-text font-semibold">InternPe</h3>
+                <p class="text-whitee">Worked on frontend development using HTML, CSS, and JavaScript.</p>
+              </div>
+          
+              <!-- Timeline Item 2 -->
+              <div class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-green-500 rounded-full -left-1.5 border border-white"></div>
+                <p class="text-sm text-gray-500">May 2024</p>
+                <h3 class="text-xl  text-text font-semibold">Nanlogical</h3>
+                <p class="text-gray-600 text-whitee">Built responsive UI components and worked on web accessibility.</p>
+              </div>
+          
+              <!-- Timeline Item 3 -->
+              <div class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-1.5 border border-white"></div>
+                <p class="text-sm text-gray-500">Aug 2024</p>
+                <h3 class="text-xl  text-text font-semibold">Novaector</h3>
+                <p class="text-whitee">Worked with React.js to build interactive user interfaces.</p>
+              </div>
+            </div>
+          </div>
+          
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var sidenav = document.querySelector(".sidenav")
+
+        function burgeron() {
+            sidenav.style.left = "0"
+
+        }
+        function burgeroff() {
+            sidenav.style.left = "-96%"
+        }
+    </script>
+    </body>
+    </html>

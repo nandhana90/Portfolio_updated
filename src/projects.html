@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-liv mx-auto mt-20">
+
+    <div class="bg-bag shadow-xl z-50   text-text align-middle p-5 top-0 left-0 fixed w-full">
+
+
+        <div class="container mx-auto  ">
+            <div class="flex  justify-between">
+                <img src="../asserts/anaprofile.jpg" height="50px" width="50px" alt="">
+                <div class="ul md:w-2/4 justify-between">
+                    <ul class="md:flex hidden   text-center justify-between md:w-full  ">
+                        <li><a class="md:text-xl  hover:text-whitee " href="index.html">Home</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="skills.html">Skills</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="intern1.html">internship</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="projects.html">projects</a></li>
+                        <li><a class="md:text-xl  hover:text-whitee" href="certifications.html">Certifications</a></li>
+
+                    </ul>
+                </div>
+                
+                
+                <div onclick="burgeron()" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="#fff" d="M3 7v2h26V7zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2zm0 4v2h26v-2z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="sidenav -left-96 bg-bag z-50 top-0 w-1/2 h-full   md:hidden  fixed transition-all duration-500">
+        <div onclick="burgeroff()">
+            <p class="mt-2 ml-44"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path fill="#fff"
+                        d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z" />
+                </svg></p>
+        </div>
+        <div class="nav-links  text-center  list-none">
+            <p class="mb-32 "><a class="text-2xl  text-text  hover:text-black " href="#">Home</a></p>
+            <p class="mb-32"><a class="text-2xl text-text hover:text-black " href="collection.html">Collection</a></p>
+            <p class="mb-32"><a class="text-2xl text-text hover:text-black" href="index.html">Fishes</a></p>
+
+        </div>
+    </div>
+
+
+
+    
+
+    <section id="#projects" class=" mx-auto w-11/12 md:p-10 "><!-- Projects -->
+        <h1 class="mx-auto text-text text-3xl text-center font-bold p-10">-- My projects --</h1>
+        <div class="container grid md:grid-cols-3 grid-cols-1 mx-auto text-text  ">
+            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
+                <div>
+                    <img class="h-80 w-full object-cover" src="../asserts/calculator.jpeg" width="content-center"
+                        alt="">
+                </div>
+                <div>
+                    <h1>Tech Stacks</h1>
+                    <ul>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Html</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Css</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Java Script</li>
+                        </div>
+
+                    </ul>
+
+
+                    <div class="items-center flex justify-center m-5 ">
+                        <div class="mr-4">
+                            <h1>Live output</h1>
+                        </div>
+                        <div>
+                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#fff"
+                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
+                                        stroke-width="1.7" stroke="#fff" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
+                <div>
+                    <img class="h-80 w-full object-cover" src="../asserts/Landing.jpeg" width="content-center" alt="">
+                </div>
+                <div>
+                    <h1>Tech Stacks</h1>
+                    <ul>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Html</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Css</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Java Script</li>
+                        </div>
+
+                    </ul>
+
+
+                    <div class="items-center flex justify-center m-5 ">
+                        <div class="mr-4">
+                            <h1>Live output</h1>
+                        </div>
+                        <div>
+                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#fff"
+                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
+                                        stroke-width="1.7" stroke="#fff" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300 z-0 border rounded-xl">
+                <div>
+                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
+                        width="content-center" alt="">
+                </div>
+                <div>
+                    <h1>Tech Stacks</h1>
+                    <ul>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Html</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Css</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Java Script</li>
+                        </div>
+
+                    </ul>
+
+
+                    <div class="items-center flex justify-center m-5 ">
+                        <div class="mr-4">
+                            <h1>Live output</h1>
+                        </div>
+                        <div>
+                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#fff"
+                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
+                                        stroke-width="1.7" stroke="#fff" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class=" bg-bag m-5 hover:shadow-blue-2xl hover:scale-105 duration-300  border rounded-xl">
+                <div>
+                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
+                        width="content-center" alt="">
+                </div>
+                <div>
+                    <h1>Tech Stacks</h1>
+                    <ul>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Html</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Css</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Java Script</li>
+                        </div>
+
+                    </ul>
+                    <div class="items-center flex justify-center m-5 ">
+                        <div class="mr-4">
+                            <h1>Live output</h1>
+                        </div>
+                        <div>
+                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#fff"
+                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
+                                        stroke-width="1.7" stroke="#fff" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300  border rounded-xl">
+                <div>
+                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
+                        width="content-center" alt="">
+                </div>
+                <div>
+                    <h1>Tech Stacks</h1>
+                    <ul>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Html</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Css</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Java Script</li>
+                        </div>
+
+                    </ul>
+                    <div class="items-center flex justify-center m-5 ">
+                        <div class="mr-4">
+                            <h1>Live output</h1>
+                        </div>
+                        <div>
+                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#fff"
+                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
+                                        stroke-width="1.7" stroke="#fff" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+               
+            <div class=" bg-bag m-5 hover:shadow-2xl hover:scale-105 duration-300 border rounded-xl">
+                <div>
+                    <img class="h-80 w-full object-cover" src="../asserts/number gussinggame.jpeg"
+                        width="content-center" alt="">
+                </div>
+                <div>
+                    <h1>Tech Stacks</h1>
+                    <ul>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Html</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Css</li>
+                        </div>
+                        <div class="flex m-2 gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                                <path fill="#fff"
+                                    d="m18 5l-6 22h2l6-22zM7.937 6.406l-6.75 9L.75 16l.438.594l6.75 9l1.625-1.188L3.25 16l6.313-8.406zm16.125 0l-1.625 1.188L28.75 16l-6.313 8.406l1.625 1.188l6.75-9L31.25 16l-.438-.594z"
+                                    stroke-width="1.7" stroke="#fff" />
+                            </svg>
+                            <li>Java Script</li>
+                        </div>
+
+                    </ul>
+                    <div class="items-center flex justify-center m-5 ">
+                        <div class="mr-4">
+                            <h1>Live output</h1>
+                        </div>
+                        <div>
+                            <a href="https://incomparable-druid-8fca65.netlify.app/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#fff"
+                                        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.065 0 11 4.935 11 11s-4.935 11-11 11S5 22.065 5 16S9.935 5 16 5m-2.8 4c-2.355 2.26-2.821 7.59-1.391 13.87c2.82.63 6.91-1.07 11.08-4.44c1.137-4.75-6.555-8.29-9.69-9.43zm2.8 5a2 2 0 1 1 .001 3.999A2 2 0 0 1 16 14"
+                                        stroke-width="1.7" stroke="#fff" />
+                                </svg></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        var sidenav = document.querySelector(".sidenav")
+
+        function burgeron() {
+            sidenav.style.left = "0"
+
+        }
+        function burgeroff() {
+            sidenav.style.left = "-96%"
+        }
+    </script>
+
+</body>
+
+</html>
