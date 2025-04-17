@@ -753,6 +753,10 @@ video {
   width: 100%;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1078,11 +1082,6 @@ video {
 
   .md\:m-5 {
     margin: 1.25rem;
-  }
-
-  .md\:mx-96 {
-    margin-left: 24rem;
-    margin-right: 24rem;
   }
 
   .md\:mx-auto {
