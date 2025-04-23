@@ -22,9 +22,10 @@ module.exports = {
        bagc:'#CBC3E3',
        //liv:'#CF9FFF',
        liv:'#454545',
-      
+       redd:'#FF0000',
        black:'#000000',
-       whitee:'#fff'
+       whitee:'#fff',
+       blue:' #0000FF',
     },
     keyframes: {
       bounceCircle: {
