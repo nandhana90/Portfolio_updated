@@ -933,6 +933,10 @@ video {
   border-right-width: 2px;
 }
 
+.border-r {
+  border-right-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1272,6 +1276,30 @@ video {
     width: 100%;
   }
 
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 78%;
+    }
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: white;
+    }
+  }
+
+  .md\:animate-typing {
+    animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1298,6 +1326,10 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
   }
 
   .md\:p-0 {
