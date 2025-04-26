@@ -789,6 +789,18 @@ video {
   width: 50%;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1314,6 +1326,14 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .md\:overflow-hidden {
